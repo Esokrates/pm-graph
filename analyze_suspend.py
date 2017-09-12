@@ -975,6 +975,8 @@ class Data:
 				r = 'ret=%s ' % r
 			if ubiquitous and c in dtf and 'ub' in dtf[c]:
 				return False
+                else:
+                        return False
 		color = sysvals.kprobeColor(kprobename)
 		e = DevFunction(displayname, a, c, r, start, end, ubiquitous, proc, pid, color)
 		tgtdev['src'].append(e)
